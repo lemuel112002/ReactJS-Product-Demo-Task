@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Container Styling */
+.container-fluid {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Search Input */
+.form-control {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: 0.3s ease-in-out;
+}
+
+.form-control:hover, .form-control:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary:hover {
+    background-color: #6c757d;
+}
+
+/* Modal Styling */
+.modal-content {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container-fluid {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        width: 98%;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-fluid {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Smooth Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
